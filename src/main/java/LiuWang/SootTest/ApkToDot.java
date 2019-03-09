@@ -20,7 +20,7 @@ public class ApkToDot {
 //        System.out.println(afdg.getCallGraph());
 //        System.out.println(afdg.getMainMethod());
         DotGraphUtil.CGToDotWithMethodsName(afdg.getCallGraph(), afdg.getMainMethod());
-        DotGraphUtil.exportDotGraph("enriched1", outputDir, DotGraphUtil.dotGraph);
+        DotGraphUtil.exportDotGraph(apkName, outputDir, DotGraphUtil.dotGraph);
 	}
 	
 	public static void runBatch(String inputDir, String outputDir, String jarsPath, String androidCallbackPath){
