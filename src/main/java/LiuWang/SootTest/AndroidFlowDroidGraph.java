@@ -8,7 +8,7 @@ import soot.jimple.infoflow.android.SetupApplication;
 import soot.jimple.toolkits.callgraph.CallGraph;
  
 /**
- * 获取android应用控制流图
+ * @ 获取android应用控制流图
  * @author liuwang
  * @create 2019-03-09 19:20
  * ---------------------------------------------------------------   
@@ -50,9 +50,9 @@ public class AndroidFlowDroidGraph {
     
     /**
      * init SetupApplication
-     * @param apkPath
-     * @param jarsPath
-     * @param androidCallbackPath
+     * @param apkPath:要分析的apk的路径
+     * @param jarsPath:android jar路径
+     * @param androidCallbackPath:文件一定要有，文件内容可以为空
      */
     private void init(String apkPath, String jarsPath, String androidCallbackPath){
     	String androidJarPath = Scene.v().getAndroidJarPath(jarsPath, apkPath);
@@ -62,11 +62,11 @@ public class AndroidFlowDroidGraph {
         setupApplication.setCallbackFile(androidCallbackPath);
     }
     
-    public static void main(String[] args) {
-        //初始化soot配置
-    	AndroidFlowDroidGraph afdg = new AndroidFlowDroidGraph();
-        System.out.println(afdg.getCallGraph());
-        System.out.println("mainMethod:"+afdg.getMainMethod());
-    }
+//    public static void main(String[] args) {
+//        //初始化soot配置
+//    	AndroidFlowDroidGraph afdg = new AndroidFlowDroidGraph();
+//        System.out.println(afdg.getCallGraph());
+//        System.out.println("mainMethod:"+afdg.getMainMethod());
+//    }
 
 }

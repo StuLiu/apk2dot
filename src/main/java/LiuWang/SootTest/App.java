@@ -4,18 +4,20 @@ package LiuWang.SootTest;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" ); 
-        String apkPath = ".\\testAPKs\\enriched1.apk";
-        String jarPath = "E:\\android-sdk-windows\\platforms";
-        String CallBacksPath = ".\\AndroidCallbacks.txt";
-        AndroidFlowDroidGraph afdg = new AndroidFlowDroidGraph(apkPath, jarPath ,CallBacksPath);
-        System.out.println(afdg.getCallGraph());
+public class App {
+    public static void main( String[] args ) {
+        System.out.println( "==========   Begin!  =============" ); 
+//        ApkToDot.run(
+//        		"testAPKs", 
+//        		"testOutput", 
+//        		"enriched1.apk", 
+//        		"E:\\android-sdk-windows\\platforms", 
+//        		"AndroidCallbacks.txt");
         
-        DotGraphUtil.CGToDotWithMethodsName(afdg.getCallGraph(), afdg.getMainMethod());
-        DotGraphUtil.exportDotGraph("enriched1", ".\\testOutput", DotGraphUtil.dotGraph);
+        ApkToDot.runBatch("testAPKs", 
+        		"testOutput",  
+        		"E:\\android-sdk-windows\\platforms", 
+        		"AndroidCallbacks.txt");
+        System.out.println("==========   Finished!  =============");
     }
 }
