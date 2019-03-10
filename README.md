@@ -6,7 +6,8 @@ This project is constructed to transform apk file into dot file. So, we can get 
 #### 安装教程
 
 1. android sdk with at least one version of sdk, like android 9.0
-2. myeclipse with maven
+2. jdk1.8
+3. myeclipse with maven
 
 #### 使用说明
 run options
