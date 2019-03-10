@@ -10,8 +10,8 @@ This project is constructed to transform apk file into dot file. So, we can get 
 
 #### 使用说明
 
--f  transfor an apk file to dot file
--d  transfor a directory of apk files to dot files.
+-f  transfor an apk file to dot file\n
+-d  transfor a directory of apk files to dot files.\n
 -i  the input directory storing .apk files
 -o  the output directory to store .dot files.
 -s  the android sdk directory, like E:\android-sdk-windows\platforms.
