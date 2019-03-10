@@ -1,25 +1,23 @@
-# Soot_Test
+# apk2dot
 
-#### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是开源中国推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
-
-#### 软件架构
-软件架构说明
-
+#### Introduction
+This project is constructed to transform apk file into dot file. So, we can get the call graph of an android apk file. And then, we can analysis the apk files with call graph easily.
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. android sdk with at least one version of sdk, like android 9.0
+2. myeclipse with maven
 
 #### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
+run options
+1. -f  transfor an apk file to dot file.
+2. -d  transfor a directory of apk files to dot files. 
+3. -i  the input directory storing .apk files.
+4. -o  the output directory to store .dot files.
+5. -s  the android sdk directory, like E:\android-sdk-windows\platforms.
+6. -c  the call backs file. It can be an empty file but nessesary.
+7. Example 1:java -jar apk2dot.jar -f -i chrome.apk -o outdir -s E:\android-sdk-windows\platforms -c cb.txt
+8. Example 2:java -jar apk2dot.jar -d -i inputdir -o outdir -s E:\android-sdk-windows\platforms -c cb.txt
 
 #### 参与贡献
 
@@ -27,13 +25,3 @@
 2. 新建 Feat_xxx 分支
 3. 提交代码
 4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
