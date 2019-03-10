@@ -70,7 +70,7 @@ public class App {
     		"apk to dot 0.0.1\tHelp messages:\n"
     		+ "-f\ttransfor an apk file to dot file.\n"
     		+ "-d\ttransfor a directory of apk files to dot files.\n"
-    		+ "-i\tthe input directory storing .apk files.\n"
+    		+ "-i\tthe path of input directory storing .apk files or of an apk file.\n"
     		+ "-o\tthe output directory to store .dot files.\n"
     		+ "-s\tthe android sdk directory, like \"E:\\android-sdk-windows\\platforms\".\n"
     		+ "-c\tthe call backs file. It can be an empty file but nessesary.\n"
