@@ -1,11 +1,40 @@
 digraph "defult-dotgraph" {
     "dummyMainMethod"
+    "dummyMainMethod_com_mj_utils_MJReceiver"
+    "dummyMainMethod"->"dummyMainMethod_com_mj_utils_MJReceiver";
+    "<init>"
+    "dummyMainMethod_com_mj_utils_MJReceiver"->"<init>";
+    "<init>"->"<init>";
+    "onReceive"
+    "dummyMainMethod_com_mj_utils_MJReceiver"->"onReceive";
+    "<clinit>"
+    "onReceive"->"<clinit>";
+    "abortBroadcast"
+    "onReceive"->"abortBroadcast";
+    "onReceive"->"abortBroadcast";
+    "equals"
+    "onReceive"->"equals";
+    "equals"->"<init>";
+    "onReceive"->"equals";
+    "onReceive"->"equals";
+    "onReceive"->"equals";
+    "onReceive"->"equals";
+    "onReceive"->"equals";
+    "onReceive"->"equals";
+    "onReceive"->"equals";
+    "onReceive"->"equals";
+    "onReceive"->"<clinit>";
+    "currentTimeMillis"
+    "onReceive"->"currentTimeMillis";
+    "createFromPdu"
+    "onReceive"->"createFromPdu";
+    "dummyMainMethod_com_admob_android_ads_analytics_InstallReceiver"
+    "dummyMainMethod"->"dummyMainMethod_com_admob_android_ads_analytics_InstallReceiver";
+    "dummyMainMethod_com_admob_android_ads_analytics_InstallReceiver"->"<init>";
+    "dummyMainMethod_com_admob_android_ads_analytics_InstallReceiver"->"onReceive";
     "dummyMainMethod_com_RZStudio_cube_Kube"
     "dummyMainMethod"->"dummyMainMethod_com_RZStudio_cube_Kube";
-    "<clinit>"
     "dummyMainMethod_com_RZStudio_cube_Kube"->"<clinit>";
-    "<clinit>"->"<clinit>";
-    "<clinit>"->"<clinit>";
     "onKeyDown"
     "dummyMainMethod_com_RZStudio_cube_Kube"->"onKeyDown";
     "initMainView"
@@ -19,16 +48,10 @@ digraph "defult-dotgraph" {
     "findAD"->"findViewById";
     "sendSms"
     "findAD"->"sendSms";
-    "equals"
     "sendSms"->"equals";
-    "<init>"
-    "equals"->"<init>";
-    "<init>"->"<init>";
-    "<init>"->"<init>";
     "save"
     "sendSms"->"save";
     "save"->"<clinit>";
-    "currentTimeMillis"
     "save"->"currentTimeMillis";
     "sendUC"
     "sendSms"->"sendUC";
@@ -203,10 +226,10 @@ digraph "defult-dotgraph" {
     "onCreate"->"setDisplay";
     "setDisplay"->"<clinit>";
     "dummyMainMethod_com_RZStudio_cube_Kube"->"<init>";
-    "onDetachedFromWindow"
-    "dummyMainMethod_com_RZStudio_cube_Kube"->"onDetachedFromWindow";
+    "onWindowVisibilityChanged"
+    "dummyMainMethod_com_RZStudio_cube_Kube"->"onWindowVisibilityChanged";
     "a"
-    "onDetachedFromWindow"->"a";
+    "onWindowVisibilityChanged"->"a";
     "a"->"<clinit>";
     "a"->"postDelayed";
     "d"
@@ -231,7 +254,6 @@ digraph "defult-dotgraph" {
     "a"->"<clinit>";
     "a"->"a";
     "a"->"d";
-    "onDetachedFromWindow"->"onDetachedFromWindow";
     "onWindowFocusChanged"
     "dummyMainMethod_com_RZStudio_cube_Kube"->"onWindowFocusChanged";
     "onWindowFocusChanged"->"a";
@@ -250,13 +272,7 @@ digraph "defult-dotgraph" {
     "getChildCount"
     "setVisibility"->"getChildCount";
     "setEnabled"->"setVisibility";
-    "setBackgroundColor"
-    "dummyMainMethod_com_RZStudio_cube_Kube"->"setBackgroundColor";
-    "setBackgroundColor"->"invalidate";
-    "onAttachedToWindow"
-    "dummyMainMethod_com_RZStudio_cube_Kube"->"onAttachedToWindow";
-    "onAttachedToWindow"->"a";
-    "onAttachedToWindow"->"onAttachedToWindow";
+    "dummyMainMethod_com_RZStudio_cube_Kube"->"setVisibility";
     "onMeasure"
     "dummyMainMethod_com_RZStudio_cube_Kube"->"onMeasure";
     "onMeasure"->"<clinit>";
@@ -283,10 +299,17 @@ digraph "defult-dotgraph" {
     "onMeasure"->"d";
     "onMeasure"->"a";
     "onMeasure"->"d";
-    "onWindowVisibilityChanged"
-    "dummyMainMethod_com_RZStudio_cube_Kube"->"onWindowVisibilityChanged";
-    "onWindowVisibilityChanged"->"a";
-    "dummyMainMethod_com_RZStudio_cube_Kube"->"setVisibility";
+    "setBackgroundColor"
+    "dummyMainMethod_com_RZStudio_cube_Kube"->"setBackgroundColor";
+    "setBackgroundColor"->"invalidate";
+    "onAttachedToWindow"
+    "dummyMainMethod_com_RZStudio_cube_Kube"->"onAttachedToWindow";
+    "onAttachedToWindow"->"a";
+    "onAttachedToWindow"->"onAttachedToWindow";
+    "onDetachedFromWindow"
+    "dummyMainMethod_com_RZStudio_cube_Kube"->"onDetachedFromWindow";
+    "onDetachedFromWindow"->"a";
+    "onDetachedFromWindow"->"onDetachedFromWindow";
     "dummyMainMethod_com_RZStudio_cube_Kube"->"<init>";
     "dummyMainMethod_com_RZStudio_cube_Kube"->"<clinit>";
     "dummyMainMethod_com_RZStudio_cube_Kube"->"<clinit>";
@@ -314,32 +337,6 @@ digraph "defult-dotgraph" {
     "onClick"
     "dummyMainMethod_com_admob_android_ads_AdMobActivity"->"onClick";
     "onClick"->"a";
-    "dummyMainMethod_com_mj_utils_MJReceiver"
-    "dummyMainMethod"->"dummyMainMethod_com_mj_utils_MJReceiver";
-    "dummyMainMethod_com_mj_utils_MJReceiver"->"<init>";
-    "onReceive"
-    "dummyMainMethod_com_mj_utils_MJReceiver"->"onReceive";
-    "onReceive"->"<clinit>";
-    "abortBroadcast"
-    "onReceive"->"abortBroadcast";
-    "onReceive"->"abortBroadcast";
-    "onReceive"->"equals";
-    "onReceive"->"equals";
-    "onReceive"->"equals";
-    "onReceive"->"equals";
-    "onReceive"->"equals";
-    "onReceive"->"equals";
-    "onReceive"->"equals";
-    "onReceive"->"equals";
-    "onReceive"->"equals";
-    "onReceive"->"<clinit>";
-    "onReceive"->"currentTimeMillis";
-    "createFromPdu"
-    "onReceive"->"createFromPdu";
-    "dummyMainMethod_com_admob_android_ads_analytics_InstallReceiver"
-    "dummyMainMethod"->"dummyMainMethod_com_admob_android_ads_analytics_InstallReceiver";
-    "dummyMainMethod_com_admob_android_ads_analytics_InstallReceiver"->"<init>";
-    "dummyMainMethod_com_admob_android_ads_analytics_InstallReceiver"->"onReceive";
     "dummyMainMethod_de_ecspride_reflectionprivacyleak1_ReflectionPrivacyLeak1"
     "dummyMainMethod"->"dummyMainMethod_de_ecspride_reflectionprivacyleak1_ReflectionPrivacyLeak1";
     "dummyMainMethod_de_ecspride_reflectionprivacyleak1_ReflectionPrivacyLeak1"->"<init>";
