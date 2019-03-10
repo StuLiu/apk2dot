@@ -28,7 +28,7 @@ public class App {
 		try {
 			cl = parser.parse( options, args );
 			
-			System.out.println(cl.hasOption('h')+""+cl.hasOption('i')+cl.hasOption('o')+cl.hasOption('s')+cl.hasOption('c'));
+//			System.out.println(cl.hasOption('h')+""+cl.hasOption('i')+cl.hasOption('o')+cl.hasOption('s')+cl.hasOption('c'));
 
 			if( cl.hasOption('h') ) {
 				System.out.println(helpMsg);
